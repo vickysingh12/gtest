@@ -2,34 +2,19 @@
 <html>
 
 <head>
-    <meta name="google-signin-client_id" content="736366669612-h9oph5h71av6ln3ire3g716fmgqlsj2c.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
   <title>Google Auth Demo</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </head>
 <body>
   <h1>Welcome to the Demo</h1>
-  <div class="g-signin2"  data-onsuccess="onSignIn">
 
-  </div>
-  <div class="g-signin2"  data-onsuccess="onSignIn">
-
-  </div>
-  <button onclick="signOut()">Sign out</button>
+  <div id="g_id_onload" data-client_id="736366669612-kknd0jbh5dl6n1oku5urrfdsngl1smv5.apps.googleusercontent.com"
+  data-login_uri="/index.html"
+  data-your_own_param_1_to_login="any_value"
+  data-your_own_param_2_to_login="any_value">
+</div>
  
-  <script>
-function signOut() {
-  gapi.auth2.getAuthInstance().signOut().then(function() {
-    console.log('user signed out')
-  })
-}
-
-    function onSignIn(googleUser) {
-      // get user profile information
-      console.log(googleUser.getBasicProfile())
-    }
-
-
-
-  </script>
+  
 </body>
 </html>
